@@ -1,3 +1,4 @@
 Commands
 npm run build
-node dist/accountQuotasGetSample.js
+node dist/accountsCreateOrUpdate.js
+node dist/accountsDelete.js

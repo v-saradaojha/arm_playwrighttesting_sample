@@ -15,8 +15,7 @@ async function accountsDelete() {
     const credential = new DefaultAzureCredential();
     const subscriptionId = process.env.AZURE_SUBSCRIPTION_ID!;
     const client = new AzurePlaywrightServiceClient(credential, subscriptionId);
-    const result = await client.accounts.delete("armtestapi-rg", "saradatestAccount");
-    console.log(result);
+    await client.accounts.delete("armtestapi-rg", "saradatestAccount");    
 }
 
 async function main() {
